@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PGDATA=/var/lib/postgresql/data/
+    ports:
+      - '5432:5432'
+    volumes: 
+      - ./Data:/var/lib/postgresql/data/
+    networks:
+      - hello-api
+  api:
+    container_name: hello-api
+    build:
+      context: ./
+    image: hello-api
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+    environment:
+      DataContext__Host: db
+      DataContext__Port: 5432
+      DataContext__User: postgres
+      DataContext__Password: postgres
+      DataContext__Database: postgres
+    links:
+      - db
+    volumes:
+      - './WebAPI:/src'
+    networks:
+      - hello-api
+networks:
+  hello-api: 
+    driver: bridge
+volumes:
+  db:
+    driver: local

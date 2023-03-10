@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{08213A89-E91A-4980-86E1-49046C73047D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.IntegrationTests", "WebAPI.IntegrationTests\WebAPI.IntegrationTests.csproj", "{F33CE48D-4528-4403-9868-A70E80997A0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.UnitTests", "WebAPI.UnitTests\WebAPI.UnitTests.csproj", "{A88E4308-4365-4756-804A-85E1A9977AF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{72058623-2B95-4C89-ADEA-5A8F6514C849}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08213A89-E91A-4980-86E1-49046C73047D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08213A89-E91A-4980-86E1-49046C73047D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08213A89-E91A-4980-86E1-49046C73047D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08213A89-E91A-4980-86E1-49046C73047D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F33CE48D-4528-4403-9868-A70E80997A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F33CE48D-4528-4403-9868-A70E80997A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F33CE48D-4528-4403-9868-A70E80997A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F33CE48D-4528-4403-9868-A70E80997A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88E4308-4365-4756-804A-85E1A9977AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88E4308-4365-4756-804A-85E1A9977AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88E4308-4365-4756-804A-85E1A9977AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88E4308-4365-4756-804A-85E1A9977AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+mkdir -p $PWD/Data
+
+docker compose up -d
+
+docker ps
+
+docker logs revolut-db-1
+
+sleep 5
+
+docker logs hello-api
